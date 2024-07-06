@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG Accommodation in Bangalore</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<style>
+    nav ul {
+        justify-content: center;   
+        list-style: none;          
+        padding: 15;                
+        margin: 10;   
+    }
+
+    @keyframes move {
+        from { transform: translateY(0); }
+        to { transform: translateY(-10px); }
+    }
+
+    .facility-container {
+        display: flex;
+        box-shadow: 0 4px 8px rgba(80, 202, 74, 0.5);
+        padding: 5%;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        margin: 20px;
+    }
+
+    .facility-container img {
+        width: 50%;
+        padding-bottom: 5px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .facility-details {
+        flex: 1;
+        text-align: left;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .facility-details h2 {
+        color: green;
+        font-size: 35px;
+        margin-bottom: 10px;
+        animation: fadeIn 2s;
+    }
+
+    .facility-details p {
+        color: black;
+        font-size: 20px;
+        margin-bottom: 20px;
+        animation: fadeIn 2s;
+    }
+
+    .facility-details button {
+        padding: 10px 20px;
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        animation: fadeIn 2s;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+</style>
+<body>
+    <div class="search-container">
+        <input type="text" placeholder="Search PG..." id="search-input">
+        <button onclick="searchPG()" style="border-radius: 8px;">Book Now</button>
+        <img src="https://s.pngkit.com/png/small/21-212995_location-marker-add-new-pin-comments-new-location.png" class="moving-image">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pg-listings.html">PG Listings</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <img src="https://www.stanzaliving.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fstanza-living%2Fimage%2Fupload%2Ff_auto%2Cq_auto%2Fv1708063441%2FWebsite%2FCMS-Uploads-Test-Servers%2FS21_Desktop_Banner_1_qpksjk.jpg&w=1920&q=75" style="margin-top: 10%;">
+
+    <div style="display: flex; box-shadow: 0 4px 8px rgba(80, 202, 74, 0.5); padding: 11%; border-radius: 10px; padding-bottom: 20px;">
+        <img src="https://i.pinimg.com/564x/ff/f3/84/fff3841b3b8e72e456678eebc0228899.jpg" style="width: 50%; padding-bottom: 18px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+        <div class="facility-details">
+            <h2 style="color: rgba(48, 249, 128, 0.425);">Top-Notch Facilities</h2>
+            <p>Our PG accommodations provide a home-like environment with modern amenities and comfort. Enjoy high-speed Wi-Fi, delicious home-cooked meals, 24/7 security, and more!</p>
+            <!-- <button onclick="location.href='schedule Now.html'">Schedule Now</button> -->
+            <button style="background-color: rgba(48, 249, 128, 0.425); border: none; padding: 10 px; cursor: pointer; border-radius:  15px;">
+                <li><a href="schedule Now.html" style="color: black; font-size: 35px; text-decoration: none; ">Schedule Now</a></li>
+            </button><br>
+        </div>
+    </div>
+
+   
+</body>
+</html>
+

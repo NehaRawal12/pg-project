@@ -1,0 +1,346 @@
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.search-container {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000; /* Ensures the search bar stays above other content */
+    top: 0;
+}
+input[type="text"] {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 70%;
+    margin-left: 20px;
+}
+button {
+    padding: 9px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin-top: 8px;
+}
+/* button:hover {
+    background-color: #45a049;
+} */
+
+header, .pg-listings, footer {
+    padding: 1em;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    /* padding: 1em; */
+    z-index: 999; /* Ensures the navbar stays above other content */
+    top: 5px; /* Adjust as needed based on the height of the search container */
+    /* border-radius: 10px; */
+}
+
+nav ul {
+    list-style-type: none;
+    /* margin-right: 100px; */
+    padding: 0;
+    max-height: 150px;
+    display: flex;
+    overflow: hidden;
+    background-color: #333;
+    padding-top: 50px;
+    
+}
+
+.full-width-image{
+    padding-top: 115px;
+
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+   
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+header {
+    background-color: pink;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+.pg-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+    flex: 1;
+}
+
+.pg-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 1em;
+    padding: 1em;
+    width: 300px;
+    text-align: center;
+}
+
+.pg-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.pg-card h2 {
+    color: pink;
+}
+
+.pg-card p {
+    margin: 0.5em 0;
+}
+
+.additional-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.additional-images img {
+    width: 70px;
+    height: 70px;
+    margin: 0.5em;
+    border-radius: 8px;
+}
+.facilities {
+    padding: 2em;
+    text-align: center;
+}
+
+.facilities h2 {
+    color: pink;
+    margin-bottom: 1em;
+}
+
+.facilities ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.facilities ul li {
+    margin: 0.5em 0;
+}
+
+.facility-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.facility-images img {
+    width: 100px;
+    height: 100px;
+    margin: 0.5em;
+    border-radius: 8px;
+}
+.contact-info {
+    padding: 2em;
+    text-align: center;
+}
+
+.contact-info h2 {
+    color: pink;
+    margin-bottom: 1em;
+}
+footer {
+    background-color: pink;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+footer nav ul {
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+footer nav ul li a {
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+.pg-details {
+    text-align: center;
+    margin: 20px;
+}
+
+.pg-details .additional-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pg-details .additional-images img {
+    width: 50px;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.carousel-img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: pink;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+.special-footer {
+    background-color: black; 
+}
+
+footer nav ul li a, .special-footer nav ul li a {
+    color: white;
+}
+
+.container {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.moving-image {
+    height: 30px;
+    width: 40px;
+    padding-left: 65px;
+    cursor: pointer;
+    animation: moveLeftToRight 5s linear infinite; 
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(200px); 
+    }
+}
+.faq {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.faq h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.faq-item p {
+    margin: 0;
+    font-size: 16px;
+}
+.btn{
+    color: white;
+    background-color: pink;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+
+}
+
+.about-us {
+    text-align: center;
+    margin: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Table styling */
+.pg-info {
+    text-align: center; /* Center-aligns text and can also help with centering the table */
+    width: 90%; /* Adjust width as needed */
+    margin: 0 auto; /* Centers the section horizontally in the page */
+}
+
+.table {
+    margin: 20px auto 0 auto; /* Adds top margin, auto centers it horizontally */
+    width: 100%; /* Full width to utilize available space */
+    border-collapse: collapse; /* Ensures borders between cells are merged */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds subtle shadow for 3D effect */
+}
+
+.table th, .table td {
+    border: 1px solid #ddd; /* Light grey border for each cell */
+    text-align: left; /* Aligns text to the left */
+    padding: 8px; /* Adds space around text in each cell */
+}
+
+.table th {
+    background-color: #f8f9fa; /* Light grey background for header cells */
+    color: #333; /* Dark grey text color for contrast */
+    font-weight: bold; /* Makes header text bold */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Zebra striping for rows */
+}
+
+.table tbody tr:hover {
+    background-color: #ddd; /* Highlight row on mouse-over */
+}
+
+@media (max-width: 768px) {
+    .table {
+        display: block;
+        overflow-x: auto; /* Allows table to scroll horizontally on small devices */
+    }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+</head>
+<style>
+        nav ul {
+        justify-content: center;   
+        list-style: none;          
+        padding: 15;                
+        margin: 10;   
+    }
+
+
+    .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .contact-container h2 {
+            margin-bottom: 20px;
+            color: green;
+        }
+
+        .contact-container p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .contact-container .icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contact-container .icons a {
+            margin: 0 10px;
+            color: green;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .contact-form {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: darkgreen;
+        }
+
+
+</style>
+<body>
+    <div class="search-container">
+        <input type="text" placeholder="Search PG..." id="search-input">
+        <button onclick="searchPG()" style="border-radius: 8px;">Book Now</button>
+        <img src="https://s.pngkit.com/png/small/21-212995_location-marker-add-new-pin-comments-new-location.png" class="moving-image">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pg-listings.html">PG Listings</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p><strong>Phone:</strong> +91 12345 67890</p>
+        <p><strong>Email:</strong> contact@pgaccommodation.com</p>
+        <div class="icons">
+            <a href="https://wa.me/911234567890" target="_blank">
+                <img src="https://img.icons8.com/fluency/48/000000/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.instagram.com/pgaccommodation" target="_blank">
+                <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/pgaccommodation" target="_blank">
+                <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" alt="Facebook">
+            </a>
+        </div>
+
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <div>
+
+    </div>
+</body>
+</html>
